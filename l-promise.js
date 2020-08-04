@@ -1,3 +1,5 @@
+// source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+// https://javascript.info/promise-basics
 async function returnAPromise(){
     return new Promise(resolve => {
         setTimeout(() => {
@@ -38,3 +40,7 @@ promise.then(
 //     console.log("after call promise");
 // }
 // callPromise();
+async function simpleAsync(){
+    return 1;
+}
+simpleAsync().then((v) => console.log(v))
