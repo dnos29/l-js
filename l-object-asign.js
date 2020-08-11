@@ -1,0 +1,11 @@
+const target = {a: 1, b: 2};
+const source = {a: 2, c: 3};
+console.log("before asign");
+console.log("target", target);
+console.log("source", target);
+const returnTarget = Object.assign(target, source);
+console.log("target", target);
+console.log("source", source);
+console.log("returnTarget", returnTarget);
+const returnTarget2 = Object.assign({}, source);
+console.log("returnTarget2: ", returnTarget2);
