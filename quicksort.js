@@ -38,5 +38,6 @@ function quicksort(items, left, right){
     }
     return items;
 }
-var sorted = quicksort(items, 0, items.length -1);
-console.log(sorted);
+// var sorted = quicksort(items, 0, items.length -1);
+// console.log(sorted);
+console.log(partition(items, 0, items.length - 1))
