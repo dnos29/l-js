@@ -1,23 +1,19 @@
 var items = [5,3,6,6,7,6,2,9];
 function swap(items, leftIdx, rightIdx){
-    console.log("--swap--");
     var tmp = items[leftIdx];
     items[leftIdx] = items[rightIdx];
     items[rightIdx] = tmp;
 }
 function partition(items, left, right){
-    var pivot   = items[Math.floor((right + left) / 2)]
-    console.log("pivot", pivot);
+    var pivot   = items[Math.floor((right + left) / 2)];
     var i = left;
     var j = right;
     while(i <= j){
         while(items[i] < pivot){
             i++;
-            console.log("i", i);
         }
         while(items[j] > pivot){
             j--;
-            console.log("j", j);
         }
         if(i <= j){
             swap(items, i, j);
